@@ -198,6 +198,9 @@ h1 span {
     height: 58px;
     font-size: 18px;
 }
+.header-topbar > button:hover{
+    cursor: grab;
+}
 .header-topbar{
     display: flex;
     justify-content: space-between;
@@ -598,6 +601,9 @@ h1 span {
     font-size: 18px;
     text-decoration: none;
 }
+.footer-right a:hover {
+    color: blue;
+}
 .footer-center{
     display: flex;
     justify-content: space-between;
@@ -644,6 +650,7 @@ h1 span {
 .footer-bottom{
     flex:1; 
 }
+
 .designer-cards-section > .stanford h1{
     width: 219px;
     height: 27px;
@@ -700,6 +707,7 @@ h1 span {
     justify-content: space-between;
     align-items: center;
 }
+
 @media(max-width:768px) {
      .partner-section {
          flex-wrap: wrap;
