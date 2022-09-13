@@ -5,7 +5,6 @@
 *{
     box-sizing: border-box;  
     font-family:'Roboto', sans-serif;
-    outline: 1px solid red;
 }
 html {
     font-size:16px;
@@ -344,15 +343,58 @@ h1 span {
     padding: 0% 8%;
     min-height: 100vh;
 }
-.designer-center{
+.pds-image{
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
-.designer-center-left{
-    display: flex;
+.pds-image .pds-left{
+    width: 338px;
+    height: 626px;
+    min-width: 250px;
 }
-.designer-center-right{
+.pds-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pds-image .pds-center {
+    width: 507px;
+    height: 626px;
+    min-width: 250px;
+}
+.pds-center img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pds-image .pds-right {
+    height: 626px;
+    width: 248px;
+    gap: 16px;
+    min-width: 250px;
+
     display: flex;
     flex-direction: column;
+}
+.pds-right .rs-top{
+    width: inherit;
+    height: 305px;
+}
+.pds-right .rs-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pds-right .rs-bottom{
+    width: inherit;
+    height: 305px;
+}
+.pds-right .rs-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .testimonials-section{
     padding: 0% 8%;
@@ -679,14 +721,29 @@ h1 span {
      }
      .view-all {
         display: flex;
+        padding-bottom:3%;
      }
      .view-all :nth-child(3){
         display: flex;
      }
+     .space{
+        display: none;
+     }
+     .music{
+        display: none;
+     }
+     .kingdom{
+        display: none;
+     }
 }
-@media(min-width:763px){
+@media(min-width:645px){
     .designer-content{
         width: 514px;
+    }
+}
+@media(max-width:645px){
+    .designer-content{
+        width:100%;
     }
 }
 @media(max-width:763px){
@@ -700,7 +757,6 @@ h1 span {
 .designer-information :nth-child(2) {
     display: flex;
 }
-
 }
 @media(max-width:611px){
     .testi-left img{
@@ -709,11 +765,7 @@ h1 span {
 }
 @media(max-width:613px){
     .projects-media{
-        width: 390px;
-    }
-    .designer-content{
-        width: 292px;
-        padding-left: 2%;
+        width:100%;
     }
 }
 @media(max-width:629px){
